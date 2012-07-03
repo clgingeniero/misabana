@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*
+------------------------------------------------------------------  
+ [Master Stylesheet]  
+	 
+ Project:    		Inqbo
+ Version:    		1.0 
+ Last change:   	02/02/2010
+ Autor: 			Inqbo
+
+-------------------------------------------------------------------
+*/ 
+@import 'general_styles.css';
+@import 'home_styles.css';

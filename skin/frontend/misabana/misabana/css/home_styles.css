@@ -1,0 +1,320 @@
+@charset "utf-8";
+/*
+------------------------------------------------------------------  
+ [Home Stylesheet]  
+	 
+ Project:    		Inqbo
+ Version:    		1.0 
+ Last change:   	30/08/2009
+ Autor: 			Inqbo
+
+ [Colores]
+ #f7e12c: Verde Inqbo
+ 
+ 
+ [Contenido]
+ 1. General
+ 2. Banners
+ 3. Cuerpo general
+ 	3.1. Cuadros de información (Noticias y Servicios)
+
+-------------------------------------------------------------------
+*/ 
+
+/* 
+------------------------------------------------------------------  
+ 1. [General]
+------------------------------------------------------------------  
+*/
+#bg_home{
+	background: url('../imagenes/bg_body.jpg') no-repeat top center;
+	width: 100%;
+	min-height: 1100px;
+	overflow: auto;
+	margin: 0;
+}
+
+/* 
+------------------------------------------------------------------  
+ 2. [Banners]
+------------------------------------------------------------------  
+*/
+.banner{
+	height: 315px;
+}
+
+.banner_cms{
+	background: url("../imagenes/bg_banner_cms.png") no-repeat;
+	background-position: 0px 10px;
+}
+.banner_kosmos{
+	background: url("../imagenes/bg_banner_kosmos.png") no-repeat;
+	background-position: 0px 15px;
+}
+.banner_appsweb{
+	background: url("../imagenes/bg_banner_medida.png") no-repeat;
+	background-position: 0px 15px;
+	margin-left: 3px;
+}
+.banner #botones{
+	width: 250px;
+	height: 200px;
+	margin: 80px 0 0 27px;
+	text-align: center;
+	float: left;
+}
+.banner #botones .opcionBanner{
+	background: url("../imagenes/bg_menu_banner.png") no-repeat center;
+	width: 250px;
+}
+.banner .imagen{
+	height: 100%;
+	overflow: auto;
+	margin-left: 200px;
+}
+.banner .imagen_cms{
+	background: url("../imagenes/img_laptop.png") no-repeat center top;
+	width: 456px;
+	float: left;
+}
+.banner .imagen_kosmos{
+	background: url("../imagenes/img_kosmos.png") no-repeat center top;
+	width: 456px;
+	float: left;
+	position: relative;
+	top: -12px;
+	margin-top: -12px;
+}
+.banner .imagen_appsweb{
+	width: 386px;
+	float: left;
+	position: relative;
+	top: -12px;
+	margin-top: -12px;
+}
+.banner .descripcion, .banner .descripcion_appsweb{
+	width: 210px;
+	float: left;
+}
+.banner .descripcion .resumen{
+	width: 180px;
+	height: 130px;
+	float: left;
+	padding: 100px 20px 0 0 ;
+	font-family: Arial;
+	font-size: 14px;
+	color: #666666;
+}
+.banner .descripcion_appsweb .resumen{
+	width: 230px;
+	height: 80px;
+	float: left;
+	padding: 150px 0 0 0 ;
+	font-family: Arial;
+	font-size: 14px;
+	color: #666666;
+}
+.banner .descripcion .resumen_cms{
+	background: url("../imagenes/es/banners/img_cms.png") no-repeat;
+	background-position: 0 40px;
+}
+.banner .descripcion .resumen_kosmos{
+	background: url("../imagenes/es/banners/img_kosmos.png") no-repeat;
+	background-position: 0 40px;
+}
+.banner .descripcion_appsweb .resumen_appsweb{
+	background: url("../imagenes/es/banners/img_dllo_medida.png") no-repeat;
+	background-position: 0 40px;
+}
+.banner .descripcion .resumen b, .banner .descripcion_appsweb .resumen b{
+	font-weight: bold;
+	color: white;
+}
+.banner .ver_mas{
+	width: 180px;
+	height: 50px;
+	padding-right: 20px;
+	text-align: right;
+}
+#form_trabaje_inqbo{
+	padding-bottom: 20px;
+}
+
+.btn_banner_productos {
+	clear: both;
+	position:relative;
+	display:block;
+	height: 48px;
+	width: 208px;
+	background:url("../imagenes/es/portal/btn_banner_producto.png") no-repeat;
+	background-position:0 0;
+	cursor: pointer;
+}
+.btn_banner_productos span.hover {
+	position: absolute;
+	display: block;
+	height: 48px;
+	width: 208px;
+	background: url("../imagenes/es/portal/btn_banner_producto.png") no-repeat;
+	background-position: bottom;
+}
+.btn_banner_servicios {
+	clear: both;
+	position:relative;
+	display:block;
+	height: 48px;
+	width: 208px;
+	background:url("../imagenes/es/portal/btn_banner_servicios.png") no-repeat;
+	background-position:0 0;
+	cursor: pointer;
+}
+.btn_banner_servicios span.hover {
+	position: absolute;
+	display: block;
+	height: 48px;
+	width: 208px;
+	background: url("../imagenes/es/portal/btn_banner_servicios.png") no-repeat;
+	background-position: bottom;
+}
+/* 
+------------------------------------------------------------------  
+ 3. [Cuerpo general]
+------------------------------------------------------------------  
+*/
+#central_content{
+	color: #888;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	top: -80px;
+	margin-top: -80px;
+}
+#central_content a:link, #central_content a:visited{
+	font-family: Arial;
+	font-size: 14px;
+	color: #f7e12c;
+	text-decoration: none;
+	font-weight: normal;
+}
+#col_izq{
+	width: 568px;
+	height: 100%;
+	overflow: auto;
+	padding-left: 87px;
+	float: left;
+}
+#col_izq .titulo_seccion_int{
+	padding-bottom: 10px;
+}
+#col_izq .titulo_seccion_ext{
+	padding: 15px 0 10px 0;
+}
+
+#col_der{
+	width: 225px;
+	float: left;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 0 35px 0 25px;
+}
+#col_der .seccion_int{
+	padding-bottom: 40px;
+}
+#col_der p{
+	padding: 7px 0 15px 0;
+}
+#col_der .btn_trabaje_con_nosotros{
+	padding: 20px 0;
+	cursor: pointer;
+}
+.titulo_font_gris_siguenos{
+	text-align: center;
+	padding: 20px 0;
+}
+.box_redes{
+	width: 112px;
+	float: left;
+}
+.btn_facebook {
+	clear: both;
+	position:relative;
+	display:block;
+	height: 100px;
+	width: 112px;
+	background:url("../imagenes/img_facebook.png") no-repeat;
+	background-position:0 0;
+	cursor: pointer;
+}	
+.btn_facebook span.hover {
+	position: absolute;
+	display: block;
+	height: 100px;
+	width: 112px;
+	background: url("../imagenes/img_facebook.png") no-repeat;
+	background-position: bottom;
+}
+.btn_twitter {
+	clear: both;
+	position:relative;
+	display:block;
+	height: 100px;
+	width: 112px;
+	background:url("../imagenes/img_twitter.png") no-repeat;
+	background-position:0 0;
+	cursor: pointer;
+}	
+.btn_twitter span.hover {
+	position: absolute;
+	display: block;
+	height: 100px;
+	width: 112px;
+	background: url("../imagenes/img_twitter.png") no-repeat;
+	background-position: bottom;
+}
+
+.fadeTrabaje{
+	background: url("../imagenes/es/portal/btn_trabaje_con_nosotros_hover.png") no-repeat;
+}
+/*	3.1. [Cuadros de información (Noticias y Servicios)] 
+------------------------------------------------------------------  
+*/
+.box_int{
+	width: 265px;
+	height: 100%;
+	overflow: auto;
+	float: left;
+	margin-right: 38px;
+	padding-bottom: 10px;
+}
+.box_ext{
+	width: 265px;
+	height: 100%;
+	overflow: auto;
+	float: left;
+	padding-bottom: 10px;
+}
+.box_int .resumen, .box_ext .resumen{
+	font-family: Arial;
+	font-size: 14px;
+	padding: 10px 0;
+}
+.box_int .resumen b, .box_ext .resumen b{
+	font-family: Arial;
+	font-size: 14px;
+	color: #f7e12c;
+	text-decoration: none;
+	font-weight: normal;
+}
+.ver_mas_amarillo{
+	text-align: right;
+}
+.bullet_item{
+	font-family: Arial;
+	font-size: 14px;
+	padding: 10px 0 10px 15px;
+	background: url("../imagenes/img_bullet.png") no-repeat;
+	background-position: 0px 16px;
+}
+
+

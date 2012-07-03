@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*
+------------------------------------------------------------------  
+ [IE Stylesheet]  
+	 
+ Project:    		Inqbo
+ Version:    		1.0 
+ Last change:   	30/08/2009
+ Autor: 			Inqbo
+
+ [Colores]
+ #f7e12c: Verde Inqbo
+ 
+ [Contenido]
+ 1. Formularios
+ 2. Modal
+ 3. Mensaje de IE6
+
+-------------------------------------------------------------------
+*/ 
+/*
+------------------------------------------------------------------  
+ 1. [Formularios]
+------------------------------------------------------------------  
+*/
+.boton_der {
+	text-align: right;
+	padding: 8px 5px 0 0;
+}
+
+.input_file {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #858585;
+	height: 35px;
+	padding: 10px 10px 0 10px;
+	border: none;
+	background: url("../imagenes/bg_input_file.png") repeat-x;
+}
+
+.box_item_int .imagen,.box_item_ext .imagen {
+	background: url("../imagenes/bg_buttom_img.png") no-repeat bottom left;
+	overflow: hidden;
+	padding-bottom: 18px;
+}
+
+#main_navi li {
+	clear: both;
+	color: #FFFFFF;
+	font-size: 12px;
+	height: 50px;
+	list-style-type: none;
+	width: 257px;
+	cursor: pointer;
+	list-style-image: none !important;
+}
+.elemento_centrado{
+	width: 552px;
+	text-align: center;
+	padding: 0 0 20px 170px;
+}
+.btn_volver_portafolio {
+	clear: both;
+	position: relative;
+	display: block;
+	height: 74px;
+	width: 257px;
+	background: url("../imagenes/es/portal/btn_volver_portafolio.png") no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.btn_volver_portafolio span.hover {
+	position: absolute;
+	display: block;
+	height: 74px;
+	width: 257px;
+	background: url("../imagenes/es/portal/btn_volver_portafolio.png") no-repeat;
+	background-position: bottom;
+}
+
+/*
+------------------------------------------------------------------  
+ 2. [Modal]
+------------------------------------------------------------------  
+*/
+
+#cboxTopLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderTopLeft.png, sizingMethod='scale');}
+#cboxTopCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderTopCenter.png, sizingMethod='scale');}
+#cboxTopRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderTopRight.png, sizingMethod='scale');}
+#cboxBottomLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderBottomLeft.png, sizingMethod='scale');}
+#cboxBottomCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderBottomCenter.png, sizingMethod='scale');}
+#cboxBottomRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderBottomRight.png, sizingMethod='scale');}
+#cboxMiddleLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderMiddleLeft.png, sizingMethod='scale');}
+#cboxMiddleRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/borderMiddleRight.png, sizingMethod='scale');}
+
+/*
+------------------------------------------------------------------  
+ 3. [Mensaje de IE6]
+------------------------------------------------------------------  
+*/
