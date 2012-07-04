@@ -136,7 +136,8 @@ body{
 	margin-left: 12px;
 }
 #ppal_menu .opcion_carrito #carrito_link_cantidad{
-	margin-left: 45px;
+	float: right;
+        margin-right: 49px;
 }
 #ppal_menu a:link{
 	color: #e7e0cb;
