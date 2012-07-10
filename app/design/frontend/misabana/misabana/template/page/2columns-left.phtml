@@ -70,12 +70,16 @@
 				<div class="miga">
 					<?php echo $this->getChildHtml('breadcrumbs') ?>
 				</div>
-				<div id="columna_izq_int">
+                                <div id="columna_izq_int">
+                                    <?php //print_r(Mage::app()->getRequest()->getParam('page_id')); 
+                                    $pageId = Mage::app()->getRequest()->getParam('page_id'); 
+                                            if($pageId==7 || $pageId == 3 || $pageId == 11 || $pageId == 8
+                                                    || Mage::app()->getRequest()->getModuleName() == 'contacts' 
+                                                    || Mage::app()->getRequest()->getModuleName() == 'catalog') { ?>
 					<div class="destacado_int">
 						<div class="titulo">Oferta del día</div>
 						<div class="imagen"><img alt="" src="<?php echo  $this->getSkinUrl('imagenes/img_banner_int.jpg') ?>"></div>
 					</div>
-					
 					<div class="seccion">
 						<div class="top"></div>
 						<div class="center">
@@ -99,20 +103,19 @@
                                                 </div>
 						<div class="bottom"></div>
 					</div>
+                                         <?php }else { ?>
+                                         <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
+                                         <?php } ?>
 				</div>
-				<div id="columna_der_int">
-					<p class="titulo_seccion"><?php echo Mage::getSingleton('cms/page')->getTitle() ?></p>
+                                <?php echo $this->getChildHtml('global_messages') ?>
+			<p class="titulo_seccion"><?php echo (Mage::getSingleton('cms/page')->getTitle()== "")? $this->__('Productos') : Mage::getSingleton('cms/page')->getTitle(); ?></p>	
+                            <div id="columna_der_int">
 					
 					<div id="int_menu">
-						<!--<div class="opcion"><a href="#">Hamacas</a></div>
-						<div class="opcion"><a href="#">Bolsos</a></div>
-						<div class="opcion"><a href="#">Sombreros</a></div>
-						<div class="opcion"><a href="#">Accesorios</a></div>
-						<div class="opcion"><a href="#">Artesanias</a></div>
-						<div class="opcion"><a href="#">Otros</a></div> -->
-					</div>
-					<?php echo $this->getChildHtml('global_messages') ?>
-                                        <div class="contenido_gral">
+                                            <?php if(Mage::app()->getRequest()->getModuleName() == 'catalog' && Mage::app()->getRequest()->getParam('id')!= 11) { ?>
+                                            <?php echo $this->getLayout()->createBlock('page/html_topmenu')->setTemplate('page/html/topmenu.phtml')->toHtml(); } ?>
+                                        </div>
+					<div class="contenido_gral">
                                             <?php echo $this->getChildHtml('content') ?>
                                         </div>					
 				</div>

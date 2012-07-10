@@ -48,6 +48,11 @@ Default layout, loads most of the pages
 
     <default>
         <!-- Mage_Customer -->
+        <remove name="left.permanent.callout" />
+         <remove name="left.reports.product.viewed" /> 
+         <remove name="cart_sidebar" />
+         <remove name="left.reports.product.compared" />
+         <remove name="catalog.compare.sidebar" />
         <reference name="top.links">
             <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10</position></action>
         </reference>

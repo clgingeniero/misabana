@@ -394,7 +394,7 @@ body{
 	padding-left: 20px;
 	width: 570px;
 	height: 100%;
-	overflow: auto;
+	/* overflow: auto; */
 	float: left;
 }
 
@@ -458,6 +458,14 @@ p.titulo_seccion{
 	font-size: 16px;
 	color: #7a6450;
 	padding: 5px 0;
+}
+
+.producto_resumen .titulo_pdto a{
+	font-family: HelveticaNeueLightCond;
+	font-size: 16px;
+	color: #7a6450;
+	padding: 5px 0;
+        text-decoration: none;
 }
 .producto_resumen .imagen_pdto{
 	padding-bottom: 7px;
