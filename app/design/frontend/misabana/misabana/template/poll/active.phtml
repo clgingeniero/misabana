@@ -39,19 +39,20 @@
     }
 //]]>
 </script>
-<div class="block block-poll">
-    <div class="block-title">
-        <strong><span><?php echo $this->__('Community Poll') ?></span></strong>
-    </div>
+
+
+
     <form id="pollForm" action="<?php echo $action ?>" method="post" onsubmit="return validatePollAnswerIsSelected();">
-        <div class="block-content">
-            <p class="block-subtitle"><?php echo $this->htmlEscape($poll->getPollTitle()); ?></p>
+        
+            <p class="titulo"><?php echo $this->htmlEscape($poll->getPollTitle()); ?></p>
             <?php if( $poll_answers ): ?>
-            <ul id="poll-answers">
+            <ul>
                 <?php foreach( $poll_answers as $answer ): ?>
                 <li>
+                    <p>
                     <input type="radio" name="vote" class="radio poll_vote" id="vote_<?php echo $answer->getId() ?>" value="<?php echo $answer->getAnswerId() ?>" />
-                    <span class="label"><label for="vote_<?php echo $answer->getId() ?>"><?php echo $this->htmlEscape($answer->getAnswerTitle()) ?></label></span>
+                    <label for="vote_<?php echo $answer->getId() ?>"><?php echo $this->htmlEscape($answer->getAnswerTitle()) ?></label>
+                    </p>
                 </li>
                 <?php endforeach; ?>
             </ul>
@@ -60,7 +61,7 @@
             <div class="actions">
                 <button type="submit" title="<?php echo $this->__('Vote') ?>" class="button"><span><span><?php echo $this->__('Vote') ?></span></span></button>
             </div>
-        </div>
+        
     </form>
-</div>
+
 <?php endif; ?>

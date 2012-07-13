@@ -32,7 +32,9 @@
 <?php echo $this->getChildHtml('global_notices') ?>
 <div id="derecha">
     <div id="top_menu">
-        <div id="izq"><input class="btn_naranja" type="button" value="<?php echo $this->__('Registrarse') ?>" onclick=""></div>
+        <?php $label = (!Mage::getSingleton('customer/session')->isLoggedIn()) ? $this->__('Registrarse'): $this->__('Logout') ?>
+        <?php $tp = (Mage::getSingleton('customer/session')->isLoggedIn()) ? 'logout' : 'create' ?>
+        <a href="<?php echo Mage::getBaseUrl(). 'customer/account/'.$tp ?>"><div id="izq"><input class="btn_naranja" type="button" value="<?php echo $label ?>"></div></a>
         <div id="der">
             <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('linksup')->toHtml() ?>						
         </div>

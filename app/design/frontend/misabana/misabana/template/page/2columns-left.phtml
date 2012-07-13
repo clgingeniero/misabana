@@ -73,17 +73,22 @@
                                 <div id="columna_izq_int">
                                     <?php //print_r(Mage::app()->getRequest()->getParam('page_id')); 
                                     $pageId = Mage::app()->getRequest()->getParam('page_id'); 
-                                            if($pageId==7 || $pageId == 3 || $pageId == 11 || $pageId == 8
-                                                    || Mage::app()->getRequest()->getModuleName() == 'contacts' 
+                                            if($pageId==7 || $pageId == 3 || $pageId == 11 || $pageId == 8 || $pageId == 10
+                                                    || $pageId == 13 || Mage::app()->getRequest()->getModuleName() == 'contacts' 
                                                     || Mage::app()->getRequest()->getModuleName() == 'catalog') { ?>
 					<div class="destacado_int">
-						<div class="titulo">Oferta del día</div>
+						<div class="titulo"><?php echo $this->__('Oferta del día')?></div>
 						<div class="imagen"><img alt="" src="<?php echo  $this->getSkinUrl('imagenes/img_banner_int.jpg') ?>"></div>
 					</div>
 					<div class="seccion">
 						<div class="top"></div>
 						<div class="center">
-							<p class="titulo">Productos favoritos</p>
+                                                    <!-- <div>
+                                                       <?php //echo $this->getChildHtml('left.poll') ?>
+                                                   </div> --> 
+                                                    
+						 <?php //echo 'xsxd' .$this->getLayout()->createBlock('poll/activePoll')->setTemplate('poll/active.phtml')->toHtml(); ?>	
+                                                        <p class="titulo">Productos favoritos</p>
 							<p><input type="radio" name="pdto_favorito"><label>Hamacas</label></p>
 							<p><input type="radio" name="pdto_favorito"><label>Bolsos</label></p>
 							<p><input type="radio" name="pdto_favorito"><label>Accesorios</label></p>
@@ -108,7 +113,8 @@
                                          <?php } ?>
 				</div>
                                 <?php echo $this->getChildHtml('global_messages') ?>
-			<p class="titulo_seccion"><?php echo (Mage::getSingleton('cms/page')->getTitle()== "")? $this->__('Productos') : Mage::getSingleton('cms/page')->getTitle(); ?></p>	
+			<p class="titulo_seccion"><?php echo (Mage::getSingleton('cms/page')->getTitle()== "")? 
+                        (Mage::app()->getRequest()->getParam('id')== 11) ? $this->__('Productos en oferta') :$this->__('Productos') : Mage::getSingleton('cms/page')->getTitle(); ?></p>	
                             <div id="columna_der_int">
 					
 					<div id="int_menu">
